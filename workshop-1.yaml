@@ -6,13 +6,13 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: busybox
+      app: nginx
   template:
     metadata:
       name: pro1-rs
       labels:
-        app: busybox
+        app: nginx
     spec:
       containers:
       - name: pro1-rs
-        image: busybox
+        image: nginx
